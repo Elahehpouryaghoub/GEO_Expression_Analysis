@@ -16,6 +16,7 @@ The script begins by preparing the R environment for gene expression analysis us
 ### **2.Sample Annotation, Data Normalization Assessment, and Visualization**
 
 Then, group labels were assigned to each sample based on their biological condition (e.g., CD34, BM, AML, PB), and the gene expression matrix was extracted from the GEO dataset.
+
 PB (Peripheral Blood):
 This sample comes from the peripheral blood, which is the blood circulating throughout the body. It is often used as a comparison to other samples because it's typically more readily available.
 
@@ -26,7 +27,9 @@ CD34:
 CD34 refers to a specific marker on stem cells, often used to isolate hematopoietic stem cells (HSCs), which are involved in blood cell production. This sample could be focused on hematopoietic stem cells or progenitor cells.
 
 AML (Acute Myeloid Leukemia):
-These samples are taken from patients with Acute Myeloid Leukemia, a type of cancer that affects the blood and bone marrow, leading to the production of abnormal white blood cells (myeloblasts). The dimensions and value ranges of the matrix were checked to determine whether the data was already normalized. A boxplot of the expression data was generated for quality control to visually assess normalization status. Although log2 transformation and quantile normalization were included as optional steps (commented out), they were not applied because the data appeared already normalized. Finally, a correlation heatmap was created using `pheatmap()` to visualize the relationships between samples based on their expression profiles, with group labels included to help interpret sample clustering.
+These samples are taken from patients with Acute Myeloid Leukemia, a type of cancer that affects the blood and bone marrow, leading to the production of abnormal white blood cells (myeloblasts). 
+
+The dimensions and value ranges of the matrix were checked to determine whether the data was already normalized. A boxplot of the expression data was generated for quality control to visually assess normalization status. Although log2 transformation and quantile normalization were included as optional steps (commented out), they were not applied because the data appeared already normalized. Finally, a correlation heatmap was created using `pheatmap()` to visualize the relationships between samples based on their expression profiles, with group labels included to help interpret sample clustering.
 
 ---
 
