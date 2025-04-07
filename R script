@@ -1,0 +1,38 @@
+### **Load useful packages:**
+
+- `Biobase` & `GEOquery`: To work with gene expression datasets from NCBI GEO.
+- `limma`: For differential gene expression analysis.
+- `pheatmap`: To draw heatmaps.
+- `gplots`: Has color palettes like `greenred()`.
+### **Specify Dataset Info**
+
+```r
+series = 'GSE9476'      # GEO series ID (the dataset)
+platform = 'GPL96'      # Microarray platform used (type of chip)
+```
+
+### **Download the Data**
+
+```r
+gset = getGEO(series, GSEMatrix=TRUE, AnnotGPL=TRUE, destdir='Data/')
+```
+
+- Downloads the gene expression data from GEO.
+- `GSEMatrix=TRUE` gets it in matrix format (easier to work with).
+- `AnnotGPL=TRUE` adds gene annotation (gene symbols, etc.).
+- `destdir='Data/'` saves the data locally in a folder called `Data/`.
+
+### **Select the Correct Platform (if multiple)**
+
+```r
+length(gset)
+
+if (length(gset) > 1) idx <- grep(platform, attr(gset, "names")) else idx <- 1
+gset <- gset[[idx]]
+```
+
+Sometimes a GEO dataset has multiple platforms. This code:
+
+- Checks if there are multiple platforms.
+- Selects the one that matches `GPL96`.
+- Then updates `gset` to only include that relevant dataset.
