@@ -23,9 +23,9 @@ gset = getGEO( series , GSEMatrix= TRUE , AnnotGPL= TRUE , destdir= 'Data/')
 length(gset)
 
 - Downloads the gene expression data from GEO.
-- GSEMatrix=TRUE` gets it in matrix format (easier to work with).
-- AnnotGPL=TRUE` adds gene annotation (gene symbols, etc.).
-- destdir='Data/'` saves the data locally in a folder called `Data/`.
+- GSEMatrix=TRUE gets it in matrix format (easier to work with).
+- AnnotGPL=TRUE adds gene annotation (gene symbols, etc.).
+- destdir='Data/' saves the data locally in a folder called `Data/`.
 
 #### Select the Correct Platform (if multiple)
 if (length(gset) > 1) idx = grep(platform, attr(gset, "names")) else idx = 1
