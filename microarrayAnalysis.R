@@ -81,11 +81,13 @@ dim(pc$rotation) #showing the samples
 dim(pc)
 
 ####Center each gene (row) manually
-#we substract each row from the mean expression of it
-ex.scaled = t(scale(t(ex) , scale= FALSE))  # scale makes the mean of each column equal to zero
- # since the genes are on row we should use t(ex) so they will go the columns and
-# then we do transpose againe to bring them back to rows after scaling
+ex.scaled = t(scale(t(ex) , scale= FALSE)) 
+# This manually **subtracts the mean** of each gene across samples.
+# (ex) flips rows and columns so genes become columns → center by gene.
+# scale = FALSE means: don't divide by standard deviation — just subtract the mean.
+# Then t(...) again to flip it back (genes as rows).
 
+#This makes sure that **all genes have a mean expression of zero**, reducing bias from baseline expression differences.
 
 ####PCA after centering the genes
 pc = prcomp(ex.scaled)
