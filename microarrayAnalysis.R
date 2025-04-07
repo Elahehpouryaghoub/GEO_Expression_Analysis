@@ -1,6 +1,6 @@
 
-#### Loads useful packages
-#install.packages(c("GEOquery" , 'limma', 'pheatmap','ggplot2' , 'gplots' , 'reshape2' , 'plyr'))
+#### Load useful packages
+install.packages(c("GEOquery" , 'limma', 'pheatmap','ggplot2' , 'gplots' , 'reshape2' , 'plyr'))
 
 library(Biobase)
 library(GEOquery)
@@ -21,7 +21,10 @@ platform = 'GPL96'    #  microarray platform used (type of chip)
 #### Download the Data
 gset = getGEO( series , GSEMatrix= TRUE , AnnotGPL= TRUE , destdir= 'Data/')
 length(gset)
-
+- Downloads the gene expression data from GEO.
+- `GSEMatrix=TRUE` gets it in matrix format (easier to work with).
+- `AnnotGPL=TRUE` adds gene annotation (gene symbols, etc.).
+- `destdir='Data/'` saves the data locally in a folder called `Data/`.
 #### Select the Correct Platform (if multiple)
 if (length(gset) > 1) idx = grep(platform, attr(gset, "names")) else idx = 1
 gset = gset[[idx]]
