@@ -31,6 +31,11 @@ length(gset)
 if (length(gset) > 1) idx = grep(platform, attr(gset, "names")) else idx = 1
 gset = gset[[idx]]
 
+Sometimes a GEO dataset has multiple platforms. This code:
+- Checks if there are multiple platforms.
+- Selects the one that matches `GPL96`.
+- Then updates `gset` to only include that relevant dataset.
+
 #### Assign group labels to samples
 gr = c('CD34' , rep('BM' , 10) , rep('CD34', 7) , rep('AML', 26) , rep('PB', 10), rep('CD34', 10))
 
