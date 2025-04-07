@@ -1,5 +1,5 @@
 # Gene-Expression and Regulatory Analysis of Acute Myeloid Leukemia(AML) Using R and Microarray Data
-This project analyzes microarray gene expression data in Acute Myeloid Leukemia (AML) using R. Differential expression analysis identifies genes altered in AML compared to healthy samples. Functional enrichment highlights key pathways and transcription factors involved in AML-related immune and inflammatory responses.
+This project analyses microarray gene expression data in Acute Myeloid Leukemia (AML) using R. Differential expression analysis identifies genes altered in AML compared to healthy samples. Functional enrichment highlights key pathways and transcription factors involved in AML-related immune and inflammatory responses.
 ### Introduction
 
 **Acute Myeloid Leukemia (AML)** is a type of cancer that affects the blood and bone marrow—the spongy tissue inside bones where blood cells are made. It is called "acute" because it progresses rapidly and requires immediate treatment. In AML, the bone marrow produces abnormal white blood cells, called myeloblasts, which multiply uncontrollably and interfere with the production of normal blood cells.
