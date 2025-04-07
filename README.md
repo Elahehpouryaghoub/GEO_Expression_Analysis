@@ -30,7 +30,9 @@ From the correlation heatmap , we can understand how similar the gene expression
 ### 4. Principal Component Analysis (PCA)
 
 In the next step, Principal Component Analysis (PCA) was performed on the gene expression matrix to reduce dimensionality and identify patterns or clusters , where genes are represented as rows.
+
 ![Image](https://github.com/user-attachments/assets/42c6f44e-ab20-4700-a37e-d9778af0ca77)
+
 In this PCA plot, a single point for each gene is plotted, and the analysis is on the variation of gene expression across all the samples. PC1 (x-axis) represents the highest contributor to variance in the data set, and PC2 (y-axis) represents the second-highest, which is orthogonal to PC1. A close horizontal spread shows that PC1 is populated with genes having overall high or low expression levels, regardless of whether they are varying between conditions. This can occur because always-expressed genes—e.g., housekeeping genes or genes of minimal biological interest—have still high numerical values, which dominate PCA if data isn't centered and scaled.
 
 As a result, PC1 may reflect absolute expression magnitudes rather than meaningful variation across conditions, while PC2 may capture smaller, more subtle patterns. Without proper preprocessing (e.g., centering, scaling, or filtering low-variance genes), PCA can focus more on expression intensity than on biologically interesting differences in expression patterns between samples.
@@ -60,7 +62,8 @@ This line:
 After removing the mean expression per gene, the total variance is more evenly distributed, and PC1 no longer soaks up the majority.  It means PCA is now more sensitive to **relative differences in expression across samples**, rather than just "how highly expressed" a gene was.
 
 then we run another PCA on **mean-centered gene expression**.
-![Image](https://github.com/user-attachments/assets/ca92bba3-fb86-4a2f-a2b3-af7136b9f874)
+![Image](https://github.com/user-attachments/assets/8ee20bfa-468e-48f5-9f3e-1a7fb2bb2280)
+
 - The result shows that variance is **more evenly distributed**, not just captured in PC1.
 - This improves clarity — PCA now focuses on **patterns of variation**, not raw expression levels.
   
@@ -70,6 +73,7 @@ then we run another PCA on **mean-centered gene expression**.
 
 Next, PCA was applied to the samples to uncover global expression patterns, highlight potential clustering or outlier samples, and simplify the data structure for easier analysis and visualization.
 ![Image](https://github.com/user-attachments/assets/9b6a270a-832b-4451-a3c8-e10e023172e1)
+
 This PCA plot shows how samples cluster based on gene expression profiles, using only the first two principal components (PC1 and PC2).
 
 ### Key Observations
