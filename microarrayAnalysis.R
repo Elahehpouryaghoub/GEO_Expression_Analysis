@@ -22,19 +22,19 @@ platform = 'GPL96'    #  microarray platform used (type of chip)
 gset = getGEO( series , GSEMatrix= TRUE , AnnotGPL= TRUE , destdir= 'Data/')
 length(gset)
 
-- Downloads the gene expression data from GEO.
-- GSEMatrix=TRUE gets it in matrix format (easier to work with).
-- AnnotGPL=TRUE adds gene annotation (gene symbols, etc.).
-- destdir='Data/' saves the data locally in a folder called `Data/`.
+# Downloads the gene expression data from GEO.
+# GSEMatrix=TRUE gets it in matrix format (easier to work with).
+# AnnotGPL=TRUE adds gene annotation (gene symbols, etc.).
+# destdir='Data/' saves the data locally in a folder called `Data/`.
 
 #### Select the Correct Platform (if multiple)
 if (length(gset) > 1) idx = grep(platform, attr(gset, "names")) else idx = 1
 gset = gset[[idx]]
 
-Sometimes a GEO dataset has multiple platforms. This code:
-- Checks if there are multiple platforms.
-- Selects the one that matches `GPL96`.
-- Then updates `gset` to only include that relevant dataset.
+#Sometimes a GEO dataset has multiple platforms. This code:
+# Checks if there are multiple platforms.
+# Selects the one that matches `GPL96`.
+# Then updates `gset` to only include that relevant dataset.
 
 #### Assign group labels to samples
 gr = c('CD34' , rep('BM' , 10) , rep('CD34', 7) , rep('AML', 26) , rep('PB', 10), rep('CD34', 10))
