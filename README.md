@@ -137,8 +137,14 @@ Additionally,reviewing **Gene Ontology (GO) terms** reveals that many of the upr
 
 ---
 
-### **Summary of Gene Expression and Functional Enrichment Analysis in AML**
+### **Conclusion of Gene Expression and Functional Enrichment Analysis in AML**
 
 The analysis revealed distinct gene expression patterns across sample types, with PCA showing that **AML samples are heterogeneous**, clustering between **CD34** and **BM** samples, while **PB** samples were clearly distinct. Differential expression analysis between AML and CD34 identified a set of significantly up- and down-regulated genes in AML. 
 
 Functional enrichment of the upregulated genes using Enrichr highlighted key **biological pathways**, notably those related to the **immune system**, and **transcription factors** such as **NFE2** that may regulate these genes. Gene Ontology analysis further indicated a strong association with the **inflammatory response**, suggesting that immune and inflammatory processes are actively involved in the molecular landscape of AML. These results provide valuable insights into the regulatory mechanisms and biological functions underlying gene expression changes in AML.
+
+## ✉ Contact
+If you have any questions or feedback, feel free to reach out!
+- **LinkedIn:** www.linkedin.com/in/elaheh-p-9918432a6
+
+ **If you find this project useful, please ⭐ star the repository!** ⭐
