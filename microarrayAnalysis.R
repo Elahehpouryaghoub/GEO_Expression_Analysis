@@ -82,6 +82,7 @@ dim(pc)
 
 ####Center each gene (row) manually
 ex.scaled = t(scale(t(ex) , scale= FALSE)) 
+
 # This manually **subtracts the mean** of each gene across samples.
 # (ex) flips rows and columns so genes become columns → center by gene.
 # scale = FALSE means: don't divide by standard deviation — just subtract the mean.
@@ -139,6 +140,4 @@ dim(aml.down)
 aml.down.genes = unique(aml.down$Gene.symbol) # to delete the repetitive ones
 aml.down.genes = as.character(strsplit2( aml.down.genes ,'///'))
 write.table(aml.down.genes , file= 'results/AML_CD34_DOWN.txt' , quote= F , row.names = F , col.names = F)
-
-#### Gene antology pathway analysis
 
