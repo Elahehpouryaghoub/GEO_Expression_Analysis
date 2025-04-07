@@ -31,7 +31,7 @@ From the correlation heatmap , we can understand how similar the gene expression
 
 In the next step, Principal Component Analysis (PCA) was performed on the gene expression matrix to reduce dimensionality and identify patterns or clusters , where genes are represented as rows.
 
-![Image](https://github.com/user-attachments/assets/42c6f44e-ab20-4700-a37e-d9778af0ca77)
+![Image](https://github.com/user-attachments/assets/cd148917-7e0e-4b60-9bb9-fd8198b9e37d)
 
 In this PCA plot, a single point for each gene is plotted, and the analysis is on the variation of gene expression across all the samples. PC1 (x-axis) represents the highest contributor to variance in the data set, and PC2 (y-axis) represents the second-highest, which is orthogonal to PC1. A close horizontal spread shows that PC1 is populated with genes having overall high or low expression levels, regardless of whether they are varying between conditions. This can occur because always-expressed genes—e.g., housekeeping genes or genes of minimal biological interest—have still high numerical values, which dominate PCA if data isn't centered and scaled.
 
