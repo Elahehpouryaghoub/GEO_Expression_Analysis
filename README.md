@@ -62,6 +62,7 @@ This line:
 After removing the mean expression per gene, the total variance is more evenly distributed, and PC1 no longer soaks up the majority.  It means PCA is now more sensitive to **relative differences in expression across samples**, rather than just "how highly expressed" a gene was.
 
 then we run another PCA on **mean-centered gene expression**.
+
 ![Image](https://github.com/user-attachments/assets/8ee20bfa-468e-48f5-9f3e-1a7fb2bb2280)
 
 - The result shows that variance is **more evenly distributed**, not just captured in PC1.
@@ -72,7 +73,8 @@ then we run another PCA on **mean-centered gene expression**.
 ### 6.Plotting PC of samples
 
 Next, PCA was applied to the samples to uncover global expression patterns, highlight potential clustering or outlier samples, and simplify the data structure for easier analysis and visualization.
-![Image](https://github.com/user-attachments/assets/9b6a270a-832b-4451-a3c8-e10e023172e1)
+
+![Image](https://github.com/user-attachments/assets/9eca4a4e-6c12-4ccf-a730-21194295149c)
 
 This PCA plot shows how samples cluster based on gene expression profiles, using only the first two principal components (PC1 and PC2).
 
