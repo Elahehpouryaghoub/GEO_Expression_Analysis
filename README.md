@@ -2,7 +2,8 @@
 This project analyses microarray gene expression data in Acute Myeloid Leukemia (AML) using R. Differential expression analysis identifies genes altered in AML compared to healthy samples. Functional enrichment highlights key pathways and transcription factors involved in AML-related immune and inflammatory responses.
 ### Introduction
 
-**Acute Myeloid Leukemia (AML)** is a type of cancer that affects the blood and bone marrow—the spongy tissue inside bones where blood cells are made. It is called "acute" because it progresses rapidly and requires immediate treatment. In AML, the bone marrow produces abnormal white blood cells, called myeloblasts, which multiply uncontrollably and interfere with the production of normal blood cells.The first step of the project involved searching the NCBI GEO database to find a relevant dataset for comparing AML cells with healthy cells. The selected dataset, identified by its GEO accession number (GSE9476), provided gene expression data from microarray analysis, which was crucial for further analysis of genetic differences between AML and healthy samples.
+**Acute Myeloid Leukemia (AML)** is a type of cancer that affects the blood and bone marrow—the spongy tissue inside bones where blood cells are made. It is called "acute" because it progresses rapidly and requires immediate treatment. In AML, the bone marrow produces abnormal white blood cells, called myeloblasts, which multiply uncontrollably and interfere with the production of normal blood cells.
+The first step of the project involved searching the NCBI GEO database to find a relevant dataset for comparing AML cells with healthy cells. The selected dataset, identified by its GEO accession number (GSE9476), provided gene expression data from microarray analysis, which was crucial for further analysis of genetic differences between AML and healthy samples.
 
 
 ---
