@@ -21,7 +21,7 @@ Then, group labels were assigned to each sample based on their biological condit
 
 ### 3.Analysis of heatmap:
 
-![correlation heatmap](Images/Screenshot 2025-03-31 203142.png)
+![Image](https://github.com/user-attachments/assets/b5c8a758-b225-40d4-a8a3-181091ebc17f)
 
 From the correlation heatmap , we can understand how similar the gene expression profiles are between different samples based on their group labels (CD34, BM, AML, PB). Looking at the **hierarchical clustering**, we can see that the **Peripheral Blood (PB)** samples cluster closely together and are clearly separated from the other groups, suggesting they are biologically distinct and potentially not ideal for comparison with the other sample types. In contrast, **CD34** and **AML** samples are positioned closer together on the heatmap, indicating they share more similar gene expression patterns — making them more appropriate for comparative analysis. The **Bone Marrow (BM)** samples appear more distant from both AML and CD34. Interestingly, although AML samples form a broad cluster, the **correlation between AML samples themselves is not very tight**, likely reflecting the **high heterogeneity of cancer cells**, as individual AML cases can vary significantly in their molecular profiles. Overall, this analysis supports focusing on CD34 and AML samples for analysis.
 
